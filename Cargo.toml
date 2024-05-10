@@ -1,0 +1,22 @@
+[package]
+name = "rust-exact-dedup"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.83"
+dashmap = "5.5.3"
+flate2 = "1.0.30"
+indicatif = "0.17.8"
+serde_json = "1.0.117"
+threadpool = "1.8.1"
+zstd = "0.13.1"
+aws-config = "1.1.8"
+aws-sdk-s3 = "1.19.1"
+tokio = { version = "1.36.0", features = ["full"] }
+async-compression = {version ="0.4.6", features=["all"]}
+rand = "0.8.5"
+clap = { version = "4.1.11", features = ["derive"] }
+glob = "0.3.1"
