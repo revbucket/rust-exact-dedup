@@ -32,7 +32,7 @@ pub mod s3;
 #[derive(Parser, Debug)]
 struct Args {
     /// (List of) directories/files (on s3 or local) that are jsonl.gz or jsonl.zstd files
-    #[arg(required=true, long)]
+    #[arg(required=true, long, num_args=1..)]
     input: Vec<PathBuf>,
 
     /// Output location (may be an s3 uri)
